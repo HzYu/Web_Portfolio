@@ -4,8 +4,9 @@
 # 環境
 開發環境 `Visual Studio Code`<br>
 開發框架 `Bootstrap`
-# 螢幕支援解析度（建議用Chrome瀏覽）
+# 螢幕支援解析度
+* 建議用Chrome瀏覽
 1920*1080
 # Bug
-還是處於摸索學習的狀態
+還是處於摸索學習的狀態<br>
 沒有支援RWD
