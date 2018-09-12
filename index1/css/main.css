@@ -1,0 +1,571 @@
+@charset "UTF-8";
+/*font-family: 'Microsoft JhengHei';*/
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'DFFangSongW6-B5';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../Font/DFFangSongW6-B5.TTF) format("truetype");
+}
+
+body, html {
+  height: 100%;
+}
+
+.img {
+  height: 100%;
+  background-image: url("../img/2(1920x900).jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /*底線陰影*/
+  /*標題*/
+  /*fly_text*/
+  /*img_context*/
+}
+
+.img .custom-nav {
+  position: relative;
+  top: 5px;
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+}
+
+.img .title {
+  font-size: 50px;
+  color: white;
+  line-height: 650px;
+  text-align: center;
+}
+
+.img .navbar {
+  padding: 0px;
+  /*Navbar列顏色*/
+  background: transparent;
+  /*標題顏色*/
+}
+
+.img .navbar a {
+  position: relative;
+  bottom: 5px;
+  margin: 10px 0px 0px 30px;
+  color: white;
+  font-size: 30px;
+}
+
+.img .navbar a:hover {
+  color: white;
+}
+
+.img .navbar .collapse {
+  margin: 0px 0px 0px 0px;
+}
+
+.img .navbar .collapse ul {
+  margin: 0px 150px 0 0px;
+}
+
+.img .navbar .collapse ul li {
+  padding: 0px 50px;
+  /*選單摺頁*/
+}
+
+.img .navbar .collapse ul li a {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.img .navbar .collapse ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-style: solid;
+  border-width: 0px 3px 3px 0px;
+  border-color: transparent transparent;
+  transition: all ease .5s;
+}
+
+.img .navbar .collapse ul li a:hover::before {
+  border-width: 0px 15px 15px 0px;
+  border-color: #eee transparent;
+}
+
+.img .fly_text {
+  list-style: none;
+  position: absolute;
+  margin-left: 100px;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%) translateY(-50%);
+  /*設定每個字母 最初位置*/
+}
+
+.img .fly_text ul li {
+  color: white;
+  display: inline-block;
+  margin: 35px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  font-size: 4em;
+  opacity: 1;
+  transition: all 2.5s ease;
+}
+
+.img .fly_text li:last-child {
+  margin-right: 0;
+}
+
+.img .fly_text .hidden li {
+  opacity: 0;
+}
+
+.img .fly_text .hidden li:nth-child(1) {
+  transform: translateX(-200px) translateY(-200px);
+}
+
+.img .fly_text .hidden li:nth-child(2) {
+  transform: translateX(20px) translateY(100px);
+}
+
+.img .fly_text .hidden li:nth-child(3) {
+  transform: translateX(-150px) translateY(-80px);
+}
+
+.img .fly_text .hidden li:nth-child(4) {
+  transform: translateX(10px) translateY(-200px);
+}
+
+.img .fly_text .hidden li:nth-child(5) {
+  transform: translateX(-300px) translateY(200px);
+}
+
+.img .fly_text .hidden li:nth-child(6) {
+  transform: translateX(-20px) translateY(-200px);
+}
+
+.img .fly_text .hidden li:nth-child(7) {
+  transform: translateX(-30px) translateY(200px);
+}
+
+.img .img_context {
+  position: absolute;
+  top: 55%;
+  left: 18%;
+  width: 1240px;
+  color: #fff;
+  text-align: center;
+  /* scroll文字 + arrow*/
+  /*定義@keyframes*/
+  /*讓scroll 上下移動 Safari and Chrome*/
+}
+
+.img .img_context .row {
+  /*關於我*/
+  /*connect me*/
+}
+
+.img .img_context .row .left_spacer {
+  padding: 0 100px 0 0;
+  /*感謝妳*/
+  /*Thank you*/
+  /*感謝妳內容*/
+}
+
+.img .img_context .row .left_spacer .thx_text {
+  position: relative;
+  bottom: 40px;
+  left: 50px;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: Microsoft JhengHei;
+  /*微軟正黑*/
+  border: white 1px solid;
+  width: 6em;
+}
+
+.img .img_context .row .left_spacer .thx_desc {
+  position: relative;
+  bottom: 52px;
+  font-size: 15px;
+  font-family: Microsoft JhengHei;
+  /*微軟正黑*/
+  color: #ffffffd5;
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.img .img_context .row .left_spacer .thx_cnt {
+  position: relative;
+  bottom: 35px;
+  display: block;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: Microsoft JhengHei;
+  /*微軟正黑*/
+  letter-spacing: 2px;
+}
+
+.img .img_context .row .center_spacer {
+  padding: 0px 150px;
+  /*我的基本資料*/
+  /*name*/
+  /*man icon*/
+  /*man hr*/
+  /*birthday*/
+  /*cake icon*/
+  /*birthday hr*/
+  /*school*/
+  /*university icon*/
+  /*school hr*/
+}
+
+.img .img_context .row .center_spacer .About_text {
+  position: relative;
+  left: 60px;
+  bottom: 40px;
+  margin-bottom: 0px;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: Microsoft JhengHei;
+  /*微軟正黑*/
+  width: 5em;
+  border: white 1px solid;
+}
+
+.img .img_context .row .center_spacer .about_desc {
+  position: relative;
+  bottom: 38px;
+  display: block;
+  margin-top: 5px;
+  font-size: 15px;
+  font-family: Microsoft JhengHei;
+  color: #ffffffd5;
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.img .img_context .row .center_spacer .name {
+  position: relative;
+  left: 27px;
+  bottom: 20px;
+  font-size: 16px;
+  font-family: Microsoft JhengHei;
+  /*微軟正黑*/
+}
+
+.img .img_context .row .center_spacer .man {
+  position: relative;
+  right: 144px;
+  bottom: 18px;
+}
+
+.img .img_context .row .center_spacer .man_hr {
+  position: relative;
+  bottom: 37px;
+  left: 5px;
+}
+
+.img .img_context .row .center_spacer .bth {
+  position: relative;
+  left: 20px;
+  bottom: 20px;
+  font-size: 16px;
+  font-family: Microsoft JhengHei;
+  /*微軟正黑*/
+}
+
+.img .img_context .row .center_spacer .cake {
+  position: relative;
+  right: 132px;
+  bottom: 20px;
+}
+
+.img .img_context .row .center_spacer .bth_hr {
+  position: relative;
+  bottom: 38px;
+  left: 5px;
+}
+
+.img .img_context .row .center_spacer .school {
+  position: relative;
+  left: 53px;
+  bottom: 20px;
+  font-size: 16px;
+  font-family: Microsoft JhengHei;
+  /*微軟正黑*/
+}
+
+.img .img_context .row .center_spacer .university {
+  position: relative;
+  right: 80px;
+  bottom: 48px;
+}
+
+.img .img_context .row .center_spacer .school_hr {
+  position: relative;
+  bottom: 70px;
+  left: 54px;
+}
+
+.img .img_context .row .right_spacer {
+  padding-left: 100px;
+  /*聯絡我*/
+  /*歡迎來信認識*/
+  /*ig icon*/
+  /*淡入出現我的ig連結*/
+  /*mail icon*/
+  /*淡入出現我的mail連結*/
+  /*github icon*/
+  /*淡入出現我的github連結*/
+}
+
+.img .img_context .row .right_spacer .connect_text {
+  position: relative;
+  margin: 0 auto;
+  bottom: 40px;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: Microsoft JhengHei;
+  /*微軟正黑*/
+  width: 5em;
+  border: white 1px solid;
+}
+
+.img .img_context .row .right_spacer .con_desc {
+  position: relative;
+  bottom: 37px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-family: Microsoft JhengHei;
+  /*微軟正黑*/
+  color: #ffffffd5;
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.img .img_context .row .right_spacer .instagram {
+  position: relative;
+  bottom: 25px;
+  right: 15px;
+}
+
+.img .img_context .row .right_spacer .ig_text {
+  position: absolute;
+  margin: 0px auto;
+  right: 86px;
+  bottom: 50px;
+  font-family: 'Marck Script', cursive;
+  font-size: 22px;
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
+.img .img_context .row .right_spacer .ig_text .ig_id {
+  display: block;
+  margin-top: 10px;
+}
+
+.img .img_context .row .right_spacer .mail {
+  position: relative;
+  bottom: 23px;
+  left: 5px;
+}
+
+.img .img_context .row .right_spacer .mail_text {
+  position: absolute;
+  margin: 0px auto;
+  right: 40px;
+  bottom: 50px;
+  font-family: 'Marck Script', cursive;
+  font-size: 22px;
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
+.img .img_context .row .right_spacer .mail_text .mail_id {
+  display: block;
+  margin-top: 10px;
+}
+
+.img .img_context .row .right_spacer .github {
+  position: relative;
+  bottom: 25px;
+  left: 20px;
+}
+
+.img .img_context .row .right_spacer .github_text {
+  position: absolute;
+  margin: 0px auto;
+  left: 55px;
+  bottom: 50px;
+  font-family: 'Marck Script', cursive;
+  font-size: 22px;
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
+.img .img_context .row .right_spacer .github_text .github_id {
+  display: block;
+  margin-top: 10px;
+}
+
+.img .img_context .row .straight_line {
+  border-right: white 2px solid;
+  height: 230px;
+}
+
+.img .img_context .scroll {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 575px;
+  bottom: -110px;
+  height: 80px;
+  /*scroll文字樣式*/
+  /*利用 animation 讓 arrow 依照 @keyframes 移動*/
+}
+
+.img .img_context .scroll .scroll_text {
+  position: relative;
+  left: 15px;
+  font-family: Microsoft JhengHei;
+  /*微軟正黑*/
+  color: #cac9c9;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.img .img_context .scroll .scroll_icon {
+  position: relative;
+  left: -25px;
+  animation: scroll_down 2.5s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+@keyframes scroll_down {
+  0% {
+    bottom: -25px;
+  }
+  50% {
+    bottom: -45px;
+  }
+  100% {
+    bottom: -25px;
+  }
+}
+
+@-webkit-keyframes scroll_down {
+  0% {
+    bottom: -25px;
+  }
+  50% {
+    bottom: -45px;
+  }
+  100% {
+    bottom: -25px;
+  }
+}
+
+/*選單底線
+        a{
+          font-size: 16px;
+          font-weight: bold;
+          
+          color:rgba($color: #C1C0B9, $alpha: 0.7500);  //淡白
+          font-size: 16px;
+          font-weight: bold;
+          border-bottom: 2px solid transparent;  //不會讓他抖動
+          
+        }
+        a:hover{
+          color:rgba($color: white, $alpha: 1.0);
+          border-bottom: 2px solid #3366FF;
+          transition:0.4s;          
+        }
+        */
+.cards {
+  height: 75%;
+}
+
+.cards .spacer {
+  padding: 100px 0px 0px 0px;
+}
+
+.cards .spacer .custom-cards {
+  position: relative;
+  bottom: 10px;
+  margin-left: 10px;
+  width: 300px;
+}
+
+.cards .spacer .custom-cards .custom-title {
+  margin-top: 50px;
+  border-color: black;
+  border-radius: 30px;
+  text-align: center;
+  color: whitesmoke;
+  background-color: rgba(10, 222, 250, 0.75);
+}
+
+.zoom {
+  position: relative;
+  overflow: hidden;
+}
+
+.zoom img {
+  transition: all 0.3s;
+}
+
+.zoom:hover img {
+  transform: scale(1.1);
+}
+
+.card-block .btn-primary {
+  color: black;
+  background-color: white;
+  border-color: black;
+  border-radius: 30px;
+}
+
+.card-block a:hover {
+  color: white;
+  background-color: black;
+  border-color: transparent;
+}
+
+/*.img-container .navbar-default{     /*滿版圖片
+	position:absolute;
+	top:0;
+	background-color:transparent;
+  border:none;
+  
+  border: 0;   /*narbar透明化
+  border-radius: 0;
+  background: none;
+    
+    .navbar-nav {
+        li a{
+          color:white;
+          font-size: 18px;
+        }
+    .navbar-brand{
+      color:white;
+    }
+    }
+}
+
+ul.nav.navbar-nav{    /*narbar變列
+  display: inline;
+}
+*/
