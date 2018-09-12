@@ -1,0 +1,29 @@
+﻿<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width(把寬度認為是device的寬度), initial-scale=1(一進網頁的時候縮放是1), shrink-to-fit=no"> Responsive(響應式)
+
+CSS CDN(數據庫)
+(3.0) <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+(3.0) <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+(4.0) <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+
+<body>
+JS CDN(放body效率較高)
+(3.0) <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+(4.0) <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+(4.0) <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+(4.0) <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+@media ( min-width: @screen-sm-min(768px) ) { .style{  } }  如果寬度 > 768 則會執行.style  (small：768px / Medium：992px / Large：1200px)
+
+Extra small devices       Small devices tablets        Medium devices Desktops     Large devices Desktops  (column all 12)
+phone<768px                     >=768px                        >=992px                    >=1200px
+.col-xs-                       .col-sm-                        .col-md-                   .col-lg-
+--------------------------------------------  
+Class
+container  固定容器大小(控制坐大的寬度)
+container-fluid  填滿容器大小
+(3.0) img-responsive  調整圖片的大小 符合responsive尺寸  (max-width: 100%; height: auto; display: block;)
+(4.0) img-fluid
