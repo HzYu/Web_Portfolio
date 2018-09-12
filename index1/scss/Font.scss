@@ -1,0 +1,20 @@
+//微軟正黑
+/*font-family: 'Microsoft JhengHei';*/
+
+//思源黑體
+@font-face {
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 300;
+    src:url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
+}
+//華康仿宋體
+@font-face{
+    font-family: 'DFFangSongW6-B5';
+    font-style: normal;
+    font-weight: 300;
+    src:url(../Font/DFFangSongW6-B5.TTF)format('truetype'),
+}
+

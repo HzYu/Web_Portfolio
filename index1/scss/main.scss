@@ -1,0 +1,470 @@
+@import 'Font';
+body , html{
+  height: 100%;
+}
+.img{ //full img
+    height: 100%; //跟body,html對應 滿版
+    background-image: url("../img/2(1920x900).jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; //不會隨者比例縮小
+  // padding-bottom: 800px;  
+  /*底線陰影*/
+  .custom-nav{
+    position: relative;;
+    top: 5px;
+    border: 0px;
+    border-radius:0px;
+    box-shadow: 0px 3px 5px rgba($color: black, $alpha: 0.5);
+    background-color: #fff;
+  }
+  /*標題*/
+  .title{
+    font-size: 50px;
+    color: white;
+    line-height: 650px;
+    text-align: center;
+  }
+  .navbar{
+    padding: 0px;
+    /*Navbar列顏色*/
+    background:rgba($color: #000000, $alpha: 0);
+    //opacity: 0.8; 透明度
+      a{
+        position: relative;
+        bottom:5px;
+        margin: 10px 0px 0px 30px;
+        color: white;
+        font-size: 30px;     
+    }
+    /*標題顏色*/
+      a:hover{
+      color: white;
+      }
+
+  .collapse{
+    margin: 0px 0px 0px 0px;
+    ul {
+      margin: 0px 150px 0 0px;
+      li {
+        padding: 0px 50px;
+        /*選單摺頁*/
+        a{
+          font-size: 18px;
+          font-weight: bold;
+        }
+        a::before{
+          content: "";
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          border-style: solid;
+          border-width: 0px 3px 3px 0px;
+          border-color: transparent transparent  ;
+          transition: all ease .5s;
+        }
+        a:hover::before{
+          border-width: 0px 15px 15px 0px ;
+          border-color: #eee transparent  ;
+        }
+      }
+      }
+    }   
+  }
+  /*fly_text*/
+  .fly_text{
+    list-style: none; //li的符號清空
+    position: absolute;
+    margin-left: 100px;
+    left: 50%;
+    top: 35%;
+    transform: translateX(-50%) translateY(-50%);
+    ul li{
+      color: white;
+      display: inline-block;
+      margin: 35px;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 100;
+      font-size: 4em;
+      opacity: 1;  //讓文字消失
+      transition: all 2.5s ease;
+    }
+    li:last-child{
+      margin-right: 0; 
+    }
+    /*設定每個字母 最初位置*/
+    .hidden{
+      li{
+        opacity: 0;//讓文字出現
+      }
+      li:nth-child(1){transform: translateX(-200px) translateY(-200px);}
+      li:nth-child(2){transform: translateX(20px) translateY(100px);}
+      li:nth-child(3){transform: translateX(-150px) translateY(-80px);}
+      li:nth-child(4){transform: translateX(10px) translateY(-200px);}
+      li:nth-child(5){transform: translateX(-300px) translateY(200px);}
+      li:nth-child(6){transform: translateX(-20px) translateY(-200px);}
+      li:nth-child(7){transform: translateX(-30px) translateY(200px);}
+    }
+  }
+/*img_context*/
+  .img_context{
+    position: absolute;
+    top: 55%;
+    left: 18%;
+    width: 1240px;
+    color: #fff;
+    text-align: center;
+    .row {
+      .left_spacer{
+        padding:0 100px 0 0;
+        /*感謝妳*/
+        .thx_text{
+          position: relative;
+          bottom: 40px;
+          left: 50px;
+          font-size: 24px;
+          font-weight: 500;
+          font-family :Microsoft JhengHei; /*微軟正黑*/
+          border: white 1px solid;
+          width: 6em;
+        }
+        /*Thank you*/
+        .thx_desc{
+          position: relative;
+          bottom: 52px;
+          font-size: 15px;
+          font-family: Microsoft JhengHei;/*微軟正黑*/
+          color: #ffffffd5;
+          opacity: 0;
+          transition: opacity 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);  //淡入效果
+        }
+        /*感謝妳內容*/
+        .thx_cnt{
+          position: relative;
+          bottom: 35px;
+          display: block;
+          line-height: 30px;     
+          font-size: 16px;
+          font-family: Microsoft JhengHei; /*微軟正黑*/
+          letter-spacing: 2px;
+        }
+      }
+      /*關於我*/
+      .center_spacer{
+        padding: 0px 150px;
+        .About_text{
+          position: relative;
+          left: 60px;
+          bottom: 40px;
+          margin-bottom: 0px;
+          font-size: 24px;
+          font-weight: 500;
+          font-family: Microsoft JhengHei;/*微軟正黑*/
+          width: 5em;
+          border: white 1px solid;
+        }  
+        /*我的基本資料*/
+        .about_desc{
+          position: relative;
+          bottom: 38px;
+          display: block;
+          margin-top:5px; 
+          font-size: 15px;
+          font-family: Microsoft JhengHei;
+          color: #ffffffd5;
+          opacity: 0;
+          transition: opacity 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);  //淡入效果
+        }
+        /*name*/
+        .name{
+          position: relative;
+          left: 27px;
+          bottom: 20px;
+          font-size: 16px;
+          font-family: Microsoft JhengHei; /*微軟正黑*/
+        }     
+        /*man icon*/
+        .man{
+          position: relative;
+          right: 144px;
+          bottom: 18px;
+        }
+        /*man hr*/
+        .man_hr{
+          position: relative;
+          bottom: 37px;
+          left: 5px;
+        }
+        /*birthday*/
+        .bth{
+          position: relative;
+          left: 20px;
+          bottom: 20px;
+          font-size: 16px;
+          font-family: Microsoft JhengHei; /*微軟正黑*/
+        }     
+        /*cake icon*/
+        .cake{
+          position: relative;
+          right: 132px;
+          bottom: 20px;
+        }
+        /*birthday hr*/
+        .bth_hr{
+          position: relative;
+          bottom: 38px;
+          left: 5px;
+        }
+         /*school*/
+        .school{
+          position: relative;
+          left: 53px;
+          bottom: 20px;
+          font-size: 16px;
+          font-family: Microsoft JhengHei; /*微軟正黑*/
+        }     
+        /*university icon*/
+        .university{
+          position: relative;
+          right: 80px;
+          bottom: 48px;
+        }
+        /*school hr*/
+        .school_hr{
+          position: relative;
+          bottom: 70px;
+          left: 54px;
+        }
+      }
+      /*connect me*/
+      .right_spacer{
+        padding-left: 100px;
+        /*聯絡我*/
+        .connect_text{
+          position: relative;
+          margin: 0 auto;
+          bottom: 40px;
+          display: inline-block;
+          font-size: 24px;
+          font-weight: 500;
+          font-family: Microsoft JhengHei;/*微軟正黑*/
+          width: 5em;
+          border: white 1px solid;
+        }
+        /*歡迎來信認識*/
+        .con_desc{
+          position: relative;
+          bottom: 37px;
+          display: block;
+          margin-top:5px; 
+          margin-bottom: 5px;
+          font-size: 15px;
+          font-family: Microsoft JhengHei;/*微軟正黑*/
+          color: #ffffffd5;
+          opacity: 0;
+          transition: opacity 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);  //讓文字有淡入的感覺
+        }
+        /*ig icon*/
+        .instagram{
+          position: relative;
+          bottom: 25px;
+          right: 15px;
+        }
+        /*淡入出現我的ig連結*/
+        .ig_text{
+          position: absolute;
+          margin: 0px auto;
+          right: 86px;
+          bottom: 50px;
+          font-family: 'Marck Script', cursive;
+          font-size: 22px;
+          opacity: 0; //讓文字消失
+          transition: opacity 1s linear;  //讓文字有淡入的感覺    
+          .ig_id{
+            display: block;
+            margin-top: 10px;
+          }
+        }
+        /*mail icon*/
+        .mail{
+          position: relative;
+          bottom: 23px;
+          left: 5px;
+        }
+         /*淡入出現我的mail連結*/
+        .mail_text{
+          position: absolute;
+          margin: 0px auto;
+          right: 40px;
+          bottom: 50px;
+          font-family: 'Marck Script', cursive;
+          font-size: 22px;
+          opacity: 0  ; //讓文字消失
+          transition: opacity 1s linear;  //讓文字有淡入的感覺
+          .mail_id{
+            display: block;
+            margin-top: 10px;
+          }
+        }
+        /*github icon*/
+        .github{
+          position: relative;
+          bottom: 25px;
+          left: 20px;
+        }
+        /*淡入出現我的github連結*/
+        .github_text{
+          position: absolute;
+          margin: 0px auto;
+          left: 55px;
+          bottom: 50px;
+          font-family: 'Marck Script', cursive;
+          font-size: 22px;
+          opacity: 0  ; //讓文字消失
+          transition: opacity 1s linear;  //讓文字有淡入的感覺
+          .github_id{
+            display: block;
+            margin-top: 10px;
+          }
+        }
+      }
+      .straight_line{
+        border-right:white 2px solid;
+        height: 230px;    
+      }            
+    }
+    /* scroll文字 + arrow*/
+    .scroll{
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      left: 575px;
+      bottom: -110px;
+      height: 80px;
+    //border: white 1px solid;
+      /*scroll文字樣式*/
+      .scroll_text{
+        position: relative;
+        left: 15px;
+        font-family: Microsoft JhengHei;/*微軟正黑*/
+        color: rgb(202, 201, 201);
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1); //讓文字有淡入的感覺
+      }   
+      /*利用 animation 讓 arrow 依照 @keyframes 移動*/
+      .scroll_icon{
+        position: relative;
+        left: -25px;
+        animation: scroll_down 2.5s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      }
+    }   
+    /*定義@keyframes*/
+    @keyframes scroll_down{ 
+      0%  {bottom: -25px;}
+      50% {bottom: -45px;}
+      100%{bottom: -25px;}
+    }
+    /*讓scroll 上下移動 Safari and Chrome*/
+    @-webkit-keyframes scroll_down{
+      0% {bottom: -25px;}
+      50%{bottom: -45px;}
+      100%{bottom: -25px;}
+    }
+  }
+
+}
+
+        /*選單底線
+        a{
+          font-size: 16px;
+          font-weight: bold;
+          
+          color:rgba($color: #C1C0B9, $alpha: 0.7500);  //淡白
+          font-size: 16px;
+          font-weight: bold;
+          border-bottom: 2px solid transparent;  //不會讓他抖動
+          
+        }
+        a:hover{
+          color:rgba($color: white, $alpha: 1.0);
+          border-bottom: 2px solid #3366FF;
+          transition:0.4s;          
+        }
+        */
+
+
+
+.cards{ 
+    //background-color:black;
+    height: 75%; //跟body,html對應
+    .spacer{
+      padding: 100px 0px 0px 0px;
+      .custom-cards{
+        position: relative;
+        bottom: 10px;
+        margin-left: 10px;
+        width: 300px;
+        .custom-title{
+          margin-top: 50px;
+          border-color: black;
+          border-radius: 30px;
+        
+          text-align: center;
+          color: whitesmoke;
+          background-color: rgba($color: hsla(187, 96%, 51%, 0.918), $alpha: 0.7500);
+        }
+      }
+    }
+}
+
+.zoom{   //讓card img放大
+  position: relative;
+  overflow: hidden;
+  img{
+    transition: all 0.3s;
+  }
+    &:hover img{
+      transform: scale(1.1); 
+    }
+}
+
+.card-block{ //更改 card 的card按鈕樣式
+  .btn-primary{
+    color: black;
+    background-color: white;
+    border-color: black;
+    border-radius: 30px;
+  }
+  a:hover{
+    color: white;
+    background-color: black;
+    border-color: transparent;
+  }
+}
+
+
+/*.img-container .navbar-default{     /*滿版圖片
+	position:absolute;
+	top:0;
+	background-color:transparent;
+  border:none;
+  
+  border: 0;   /*narbar透明化
+  border-radius: 0;
+  background: none;
+    
+    .navbar-nav {
+        li a{
+          color:white;
+          font-size: 18px;
+        }
+    .navbar-brand{
+      color:white;
+    }
+    }
+}
+
+ul.nav.navbar-nav{    /*narbar變列
+  display: inline;
+}
+*/
