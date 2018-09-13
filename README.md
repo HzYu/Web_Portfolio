@@ -5,7 +5,8 @@
 * index1（自我介紹）<br>
 * index2（Cafe）
 ___
-### index1<br>
+### index1（自我介紹）<br>
 ![](https://github.com/HzYu/Web_Portfolio/blob/master/index1/Pic/index1.gif)
-### index2<br>
+___
+### index2（Cafe）<br>
 ![](https://github.com/HzYu/Web_Portfolio/blob/master/index2/Pic/index2.gif)
